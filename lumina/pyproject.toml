@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "lumina"
+version = "0.1.0"
+description = ""
+authors = ["bani2016up <bani2016up@gmail.com>"]
+readme = "README.md"
+
+
+[tool.poetry.dependencies]
+python = "^3.12"
+torch = "2.5.1"
+gpt4all = "2.8.2"
+geocoder = "1.38.1"
+pymongo = "4.10.1"
+meilisearch = "0.33.0"
+bson = "0.5.10"
+python-dotenv = "1.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
