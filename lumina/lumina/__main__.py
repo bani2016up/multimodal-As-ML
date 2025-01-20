@@ -13,7 +13,8 @@ def main() -> None:
             user_input = input("..| ")
             if user_input == "exit":
                 break
-            for response in chat.ask(user_input):
+            commands_response = [input(f"c{i}") for i in range(int(input("range")))]
+            for response in chat.ask(user_input, commands_response):
                 print(response, end="")
             print("\n")
 
